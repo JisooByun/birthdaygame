@@ -1,0 +1,24 @@
+package com.example.birthdaygame
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        nextbutton.setOnClickListener{
+            val intent = Intent(this,MiddleActivity::class.java)
+            intent.putExtra("name",nametext.text.toString())
+            startActivity(intent)
+        }
+    }
+
+
+
+
+}
