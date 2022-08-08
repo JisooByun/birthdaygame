@@ -8,7 +8,7 @@ import java.util.Random
 
 class MiddleActivity : AppCompatActivity() {
     private fun randomday():String{
-        val random = Random()
+        //val random = Random()
         val a = random.nextInt(12) + 1
         var b = 0
         when {
