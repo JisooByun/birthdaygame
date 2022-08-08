@@ -8,8 +8,13 @@ import java.util.Random
 
 class MiddleActivity : AppCompatActivity() {
     private fun randomday():String{
+<<<<<<< HEAD
+        //val random = Random()
+        val a = random.nextInt(12) + 1
+=======
         val random = Random()
 //         val a = random.nextInt(12) + 1
+>>>>>>> f979f5f696142c58b0e91260c99c7f3680bbe5c8
         var b = 0
         when {
             a == 1 -> b = random.nextInt(31) + 1
